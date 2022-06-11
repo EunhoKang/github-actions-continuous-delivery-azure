@@ -9,6 +9,7 @@ env:
   #################################################
   ### USER PROVIDED VALUES ARE REQUIRED BELOW   ###
   #################################################
+  if: contains(github.event.pull_request.labels.*.name, 'peacock')
   #################################################
   ### REPLACE USERNAME WITH GH USERNAME         ###
   AZURE_WEBAPP_NAME: EunhoKang-ttt-app
